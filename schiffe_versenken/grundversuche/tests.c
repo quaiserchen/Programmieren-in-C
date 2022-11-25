@@ -14,6 +14,8 @@ int main () {
     spielfeld[3][3] = 2;
     spielfeld[3][4] = 2;
     spielfeld[3][5] = 2;
+    
+    //ein testkommentar
 
     //Schiff 2
     spielfeld[7][5] = 2;
