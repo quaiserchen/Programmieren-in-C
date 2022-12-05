@@ -11,15 +11,35 @@ int main () {
 
     char czeichen1 = 'a', czeichen2 = 'a', czeichen3 = 'a';
 
-
-
-
-
-
-
-
-
-
+    
+    printf("Bitte geben Sie hier was ein: ");
+    scanf("%?", &variable);
+    
+    printf("\nBitte geben Sie heir noch etwas ein: ");
+    scanf("&?", &variable);
+    
+    switch(variable){
+        case x: case x2:
+            
+            break;
+        case y:
+            
+            break;
+        case z:
+            
+            break;
+        default:
+            
+            break;
+    }
+    
+    if(varx == vary){
+        
+    } else if(varx <= vary && varx >= vary){
+    
+    } else {
+    
+    }
 
 
     system ("pause");
