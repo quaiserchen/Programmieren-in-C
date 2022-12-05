@@ -15,7 +15,7 @@ int main () {
     printf("Bitte geben Sie hier was ein: ");
     scanf("%?", &variable);
     
-    printf("\nBitte geben Sie heir noch etwas ein: ");
+    printf("\nBitte geben Sie hier noch etwas ein: ");
     scanf("&?", &variable);
     
     switch(variable){
