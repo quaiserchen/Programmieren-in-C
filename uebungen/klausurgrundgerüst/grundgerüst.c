@@ -9,7 +9,7 @@ int main () {
 
     double dzahl1 = 0, dzahl2 = 0, dzahl3 = 0;
 
-    char czeichen1 = 'a', czeichen2 = 'a', czeichen3 = 'a';
+    char czeichen1 = ' ', czeichen2 = ' ', czeichen3 = ' ';
 
     
     printf("Bitte geben Sie hier was ein: ");
