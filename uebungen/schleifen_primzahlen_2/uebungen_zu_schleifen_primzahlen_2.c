@@ -6,7 +6,7 @@
 
 int main(int argc, char* argv[])
 {
-  // Variablen für Zeitmessung
+  // Variablen fï¿½r Zeitmessung
   LARGE_INTEGER iFreq;
   LARGE_INTEGER iBegin, iEnd;
 
@@ -18,18 +18,18 @@ int main(int argc, char* argv[])
   QueryPerformanceCounter(&iBegin);
 
   // Ermittlung der Primzahlen
-  printf("\Die primzahlen von 2 bis 1 Millionen lauten: ");
+  printf("\nDie primzahlen von 2 bis 1 Millionen lauten: ");
 
-  	for (int i = 3; i <= 100000; i++) {
+  	for (int i = 3; i <= 1000000; i++) {
   		int prim = 1;
-  		for (int j = 3; j < i; j++) {
+  		for (int j = 3; j < sqrt(i) && prim == 1; j++) {
   			if ((i % j) == 0) {
   				prim = 0;
   			}
   		}
-  		if (prim == 1) {
-  			printf("\n%d", i);
-  		}
+  		/* if (prim == 1) {
+  			printf(" %d ", i);
+  		}*/
   	}
 
 

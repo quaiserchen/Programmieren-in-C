@@ -1,22 +1,32 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void) {
 
-	int prim = 1;
-	int eingabe, test;
+	int eingabe =  0;
+	int teiler_gefunden = 0;
+	float wurzel = 0;
+	float tester = 0;
+	int teiler = 2;
 
-	printf("\nBitte geben Sie eine Zahl ein: ");
+	printf("Zahl eingeben: ");
 	scanf("%d", &eingabe);
 
-	for (int i = 3; i < eingabe; i++) {
-		if ((eingabe % i) == 0) {
-			prim = 0;
+	wurzel = sqrt(eingabe);
+
+	while(teiler_gefunden == 0 && tester <= wurzel) {
+		tester = eingabe % teiler;
+		if (tester == 0){
+			teiler_gefunden = 1;
+			
 		}
+		teiler++;
 	}
-	if (prim == 1) {
-		printf("\nDie Zahl %d ist eine Primzahl\n", eingabe);
+
+	if (teiler_gefunden = 0){
+		printf("\n%d ist eine Primzahl\n", eingabe);
 	} else {
-		printf("\nDie Zahl %d ist keine Primzahl\n", eingabe);
+		printf("\n%d ist keine Primzahl\n", eingabe);
 	}
 
 	system("pause");
